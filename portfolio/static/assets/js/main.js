@@ -45,35 +45,36 @@ function scrollActive(){
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
-    duration: 600,  // Reduced from 1000ms to 600ms
+    duration: 300,  // Changed duration to 300ms for faster animation
     reset: true
 })
 
 /* SCROLL HOME */
-sr.reveal('.home__title', { duration: 500, delay: 0 })  // Reduced duration
-sr.reveal('.home__scroll', { duration: 500, delay: 100 })  // Reduced duration
-sr.reveal('.home__img', { origin: 'right', duration: 500, delay: 200 })  // Reduced duration
+sr.reveal('.home__title', { duration: 300, delay: 0 })  // Duration of 300ms, no delay
+sr.reveal('.home__scroll', { duration: 300, delay: 50 })  // Duration of 300ms, slight delay
+sr.reveal('.home__img', { origin: 'right', duration: 300, delay: 100 })  // Duration of 300ms
 
 /* SCROLL ABOUT */
-sr.reveal('.about__img', { duration: 500, delay: 300 })  // Reduced duration
-sr.reveal('.about__subtitle', { duration: 500, delay: 200 })  // Reduced duration
-sr.reveal('.about__profession', { duration: 500, delay: 300 })  // Reduced duration
-sr.reveal('.about__text', { duration: 500, delay: 400 })  // Reduced duration
-sr.reveal('.about__social-icon', { duration: 500, delay: 500, interval: 150 })  // Reduced duration
+sr.reveal('.about__img', { duration: 300, delay: 150 })  // Duration of 300ms
+sr.reveal('.about__subtitle', { duration: 300, delay: 100 })  // Duration of 300ms
+sr.reveal('.about__profession', { duration: 300, delay: 150 })  // Duration of 300ms
+sr.reveal('.about__text', { duration: 300, delay: 200 })  // Duration of 300ms
+sr.reveal('.about__social-icon', { duration: 300, delay: 250, interval: 100 })  // Duration of 300ms, adjusted interval
 
 /* SCROLL SKILLS */
-sr.reveal('.skills__subtitle', { duration: 500, delay: 0 })  // Reduced duration
-sr.reveal('.skills__name', { distance: '20px', duration: 500, delay: 50, interval: 50 })  // Reduced duration
-sr.reveal('.skills__img', { duration: 500, delay: 200 })  // Reduced duration
+sr.reveal('.skills__subtitle', { duration: 300, delay: 0 })  // Duration of 300ms
+sr.reveal('.skills__name', { distance: '20px', duration: 300, delay: 25, interval: 75 })  // Duration of 300ms
+sr.reveal('.skills__img', { duration: 300, delay: 100 })  // Duration of 300ms
 
 /* SCROLL PORTFOLIO */
-sr.reveal('.portfolio__img', { duration: 500, interval: 150 })  // Reduced duration
+sr.reveal('.portfolio__img', { duration: 300, interval: 100 })  // Duration of 300ms
 
 /* SCROLL CONTACT */
-sr.reveal('.contact__subtitle', { duration: 500, delay: 0 })  // Reduced duration
-sr.reveal('.contact__text', { duration: 500, interval: 150 })  // Reduced duration
-sr.reveal('.contact__input', { duration: 500, delay: 300 })  // Reduced duration
-sr.reveal('.contact__button', { duration: 500, delay: 400 })  // Reduced duration
+sr.reveal('.contact__subtitle', { duration: 300, delay: 0 })  // Duration of 300ms
+sr.reveal('.contact__text', { duration: 300, interval: 100 })  // Duration of 300ms
+sr.reveal('.contact__input', { duration: 300, delay: 200 })  // Duration of 300ms
+sr.reveal('.contact__button', { duration: 300, delay: 250 })  // Duration of 300ms
+
 
 
 
