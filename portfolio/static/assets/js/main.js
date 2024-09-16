@@ -45,35 +45,36 @@ function scrollActive(){
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
-    duration: 100,
+    duration: 600,  // Reduced from 1000ms to 600ms
     reset: true
 })
 
-/*SCROLL HOME*/
-sr.reveal('.home__title', {})
-sr.reveal('.home__scroll', {delay: 200})
-sr.reveal('.home__img', {origin:'right', delay: 400})
+/* SCROLL HOME */
+sr.reveal('.home__title', { duration: 500, delay: 0 })  // Reduced duration
+sr.reveal('.home__scroll', { duration: 500, delay: 100 })  // Reduced duration
+sr.reveal('.home__img', { origin: 'right', duration: 500, delay: 200 })  // Reduced duration
 
-/*SCROLL ABOUT*/
-sr.reveal('.about__img', {delay: 500})
-sr.reveal('.about__subtitle', {delay: 300})
-sr.reveal('.about__profession', {delay: 400})
-sr.reveal('.about__text', {delay: 500})
-sr.reveal('.about__social-icon', {delay: 600, interval: 200})
+/* SCROLL ABOUT */
+sr.reveal('.about__img', { duration: 500, delay: 300 })  // Reduced duration
+sr.reveal('.about__subtitle', { duration: 500, delay: 200 })  // Reduced duration
+sr.reveal('.about__profession', { duration: 500, delay: 300 })  // Reduced duration
+sr.reveal('.about__text', { duration: 500, delay: 400 })  // Reduced duration
+sr.reveal('.about__social-icon', { duration: 500, delay: 500, interval: 150 })  // Reduced duration
 
-/*SCROLL SKILLS*/
-sr.reveal('.skills__subtitle', {})
-sr.reveal('.skills__name', {distance: '20px', delay: 50, interval: 100})
-sr.reveal('.skills__img', {delay: 400})
+/* SCROLL SKILLS */
+sr.reveal('.skills__subtitle', { duration: 500, delay: 0 })  // Reduced duration
+sr.reveal('.skills__name', { distance: '20px', duration: 500, delay: 50, interval: 50 })  // Reduced duration
+sr.reveal('.skills__img', { duration: 500, delay: 200 })  // Reduced duration
 
-/*SCROLL PORTFOLIO*/
-sr.reveal('.portfolio__img', {interval: 200})
+/* SCROLL PORTFOLIO */
+sr.reveal('.portfolio__img', { duration: 500, interval: 150 })  // Reduced duration
 
-/*SCROLL CONTACT*/
-sr.reveal('.contact__subtitle', {})
-sr.reveal('.contact__text', {interval: 200})
-sr.reveal('.contact__input', {delay: 400})
-sr.reveal('.contact__button', {delay: 600})
+/* SCROLL CONTACT */
+sr.reveal('.contact__subtitle', { duration: 500, delay: 0 })  // Reduced duration
+sr.reveal('.contact__text', { duration: 500, interval: 150 })  // Reduced duration
+sr.reveal('.contact__input', { duration: 500, delay: 300 })  // Reduced duration
+sr.reveal('.contact__button', { duration: 500, delay: 400 })  // Reduced duration
+
 
 
 
